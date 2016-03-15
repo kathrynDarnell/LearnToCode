@@ -1,0 +1,40 @@
+<script type="text/javascript" src="/jquery-2.2.1.min.js"></script>
+
+<h1>Pepper's contols are mixed up. Can you help him? <h1>
+<img src="/images/pepper.png" style="width:15%" id="pepper"> 
+
+
+
+       <script type="text/javascript">
+
+	
+
+window.onload = function(){
+  $(document).keydown(function(e) {
+	var element = document.getElementById("pepper");
+
+	  switch (e.keyCode) {
+		case 37:
+			$("img").animate({left: '250px'});                    
+		break;
+
+		case 39:
+			alert("left");
+			  $("img").animate({left: '250px'});
+		break;
+
+		case 38:
+				$("img").animate({up: '250px'});
+		break;
+
+		case 40:
+			$("img").animate({down: '250px'});
+		break;
+	}
+  
+  
+  
+  });
+};
+  </script>
+  
