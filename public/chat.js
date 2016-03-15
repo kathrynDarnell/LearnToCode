@@ -9,7 +9,7 @@ window.onload = function() {
 		}	
 	)
     var messages = [];
-    var socket = io.connect('http://localhost:6004');
+    var socket = io.connect('http://learntocode.mybluemix.net/');
     var field = document.getElementById("field");
 	var username = document.getElementById("username");
     var sendButton = document.getElementById("send");
